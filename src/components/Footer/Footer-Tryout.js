@@ -1,17 +1,9 @@
+import {
+    Box, Button, Container, Divider, Grid, Link, Stack, TextField, Typography
+} from '@mui/material';
 import React from "react";
-import { 
-    Typography,
-    Grid,
-    Button,
-    Box,
-    Link,
-    TextField,
-    Container,
-    Stack,
-    Divider
-} from '@mui/material'
-import { Link as RouterLink } from 'react-router-dom'
-import { FaInstagram, FaLinkedinIn, FaFacebookF, FaTwitter } from 'react-icons/fa'
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
+import { Link as RouterLink } from 'react-router-dom';
 
 export default function Footer(){
     return (
@@ -20,7 +12,8 @@ export default function Footer(){
                 backgroundColor:'#0C3959',
                 display: "flex",
                 flexDirection: "row",
-                justifyContent: "center"
+                justifyContent: "center",
+                marginTop: 'auto'
             }}>
                 <Box component="span" style={{ 
                     width:"70%",

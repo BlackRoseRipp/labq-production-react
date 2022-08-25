@@ -1,6 +1,5 @@
 import React, { Component, Suspense } from "react";
 import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
-import "./Nav.css";
 
 const Home = React.lazy(() => import("../../pages/Home/Home"))
 const Services = React.lazy(() => import("../../pages/Services/Services"))
