@@ -1,29 +1,41 @@
 #resources-button:hover {
-    border-bottom-color: black
+  border-bottom-color: black;
 }
 
 .nav-top {
-    background: #0C3959;
-    height: 3.2rem;
-    align-items: center;
-    justify-content: center;
+  background: #0c3959;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
 }
 
 .nav-top-left,
 .nav-top-right {
-    font-size: .75rem;
-    align-items: center;
-    justify-content: center;
+  font-size: 0.75rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.nav-top-left {
+  color: #fff;
 }
 
 .nav-top-right {
-    margin-left: auto;
-    margin-right: 0px
+  margin-left: auto;
+  margin-right: 0px;
 }
 
 .nav-top-link {
-    color: #FFFFFF;
-    text-decoration: none;
-    justify-content: center;
-    align-items: center
+  color: #ffffff;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-testing {
+  color: #0f2f64;
+  border-color: #0f2f64;
 }

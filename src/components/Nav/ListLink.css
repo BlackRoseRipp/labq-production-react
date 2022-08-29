@@ -1,0 +1,36 @@
+.dropend:hover .child-menu {
+  display: block;
+  top: 0;
+  right: auto;
+  left: 100%;
+  margin-top: 0;
+}
+
+.dropend .child-menu {
+  margin-left: 0;
+  width: max-content;
+  border-radius: 0;
+  padding: 0;
+}
+
+.dropend .dropdown-toggle::after {
+  content: none;
+}
+
+.btn-link-dropdown {
+  padding: 0.5em 2em;
+  border: 0;
+  border-radius: 0;
+  color: #090a0a;
+}
+
+.list-link {
+  padding: 0.5em 2em;
+  color: #090a0a;
+  transition: background-color 200ms linear;
+}
+
+.list-link:hover,
+.btn-link-dropdown:hover {
+  background-color: #e8f5fc;
+}

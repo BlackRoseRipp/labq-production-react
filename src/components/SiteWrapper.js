@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
+import Footer from "./Footer/Footer";
 import NavBar from "./Nav/NavBar";
-import Footer from "./Footer/Footer-Tryout";
 
 
 const SiteWrapper = (props) => {

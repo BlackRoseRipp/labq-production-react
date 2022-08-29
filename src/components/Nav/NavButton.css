@@ -1,21 +1,55 @@
-.dropdown:hover .dropdown-menu {
-    display: block;
-    margin-top: 0;
+.dropdown:hover .parent-menu {
+  margin-top: 0;
+  display: block;
+}
+
+.dropdown-menu {
+  width: max-content;
+  border-radius: 0;
 }
 
 .dropdown-toggle::after {
-    content: none;
+  content: none;
+  border: 0;
+  margin: 0;
 }
 
 .btn-nav-dropdown {
-    --bs-btn-font-weight: 600;
-    --bs-btn-border-color: transparent;
-    --bs-btn-border-radius: 0;
-    --bs-btn-hover-border-color: transparent;
-    --bs-btn-active-color: #3892e7;
+  --bs-btn-padding-x: 18px;
+  --bs-btn-padding-y: 12px;
+  --bs-btn-font-weight: 700;
+  --bs-btn-color: #090a0a;
+  --bs-btn-border-color: transparent;
+  --bs-btn-border-width: 0;
+  --bs-btn-border-radius: 0;
+  --bs-btn-hover-border-color: transparent;
+  --bs-btn-active-color: var(--bs-btn-color);
+  --bs-btn-active-border-color: transparent;
 }
 
-.btn-nav-dropdown:hover,
-.btn-nav-dropdown:active {
-    border-bottom-color: #009FE3;
+.btn-nav-dropdown::after,
+.list-btn::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: #009fe3;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0%;
+  transition: opacity 270ms linear;
+}
+
+.btn-nav-dropdown:hover::after,
+.list-btn:hover::after,
+.btn-nav-dropdown:focus::after,
+.list-btn:focus::after {
+  opacity: 100%;
+}
+
+.list-btn {
+  padding: 12px 18px;
+  color: #090a0a;
+  font-weight: 700;
 }
